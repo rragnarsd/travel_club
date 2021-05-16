@@ -156,15 +156,28 @@ button.btn {
 
 /*Card-Container*/
 
-.card-container .cards {
-  width: 100%;
+.card-container {
+  max-width: 1200px;
+}
+
+.cards {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cards .col {
+  display: inline-flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
 
+.col .card {
+  width: 25%;
+}
+
 .cards .card {
-  width: 30%;
   height: 300px;
   margin: 6px;
 }
