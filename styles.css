@@ -83,7 +83,7 @@ button.btn {
 }
 
 .collapse {
-  height: 30rem;
+  height: 25rem;
 }
 
 .nav .nav-items {
@@ -193,6 +193,7 @@ button.btn {
   flex: 1 100%;
   border: .5px solid #cecece;
   margin: 15px;
+  border-radius: 10px;
 }
 
 .card-container .cards-content h3 {
@@ -208,6 +209,7 @@ button.btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 /*.discovery-container*/
@@ -235,15 +237,150 @@ button.btn {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-@media (min-width: 768px) {
-  .card-container {
-    margin: 40px;
+.discovery-container .discovery-content .discovery-text {
+  margin: 20px 0;
+}
+
+.discovery-container .discovery-content .discovery-text h2 {
+  color: purple;
+}
+
+.discovery-container .discovery-content .discovery-text h3 {
+  margin: 5px 0 10px 0;
+}
+
+.discovery-container .discovery-content .discovery-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+
+.discovery-container .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: purple;
+  color: white;
+  padding: 10px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*Contact-Container*/
+
+.contact-container {
+  background: url(images/sean-o.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 100px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .left-side {
+  width: 40%;
+  text-align: center;
+}
+
+.contact-container .left-side h3{
+  margin-left: 0;
+  padding: 5px 0;
+}
+
+.contact-container .contact-bg {
+  background: rgba(0, 0, 0, .5);
+  padding: 80px 30px;
+  border-radius: 10px;
+  width: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+}
+
+form {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.contact-container form label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.contact-container form input, textarea {
+  background: transparent;
+  border: 1px solid grey;
+  padding: 8px 18px;
+  margin: 15px 0;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  resize: vertical;
+  border-radius: 10px;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  color: darkgray;
+}
+
+.contact-container form .submit {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: purple;
+    color: white;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-container form .submit:hover {
+  background-color: purple;
+}
+
+/*Footer*/
+.footer {
+  background-color: purple;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer span {
+  font-weight: bold;
+  color: indigo;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+  .nav .nav-menu, .nav .nav-items {
+    flex-direction: column;
   }
 
-  .discovery-container {
-    margin: 40px;
+  .nav .toggle-collapse {
+    display: initial;
   }
 
   .card-container .cards-content {
@@ -253,25 +390,25 @@ button.btn {
   .card-container .cards-content {
     flex: 1 calc(50% - 20px);
   }
-}
-
-/*Viewport less then or equal to 750px*/
-
-@media only screen and (max-width: 750px) {
-  .nav .nav-menu, .nav .nav-items {
-    flex-direction: column;
-  }
-
-  .nav .toggle-collapse {
-    display: initial;
-  }
 
   .card-container  {
-    margin: 40px;
+    padding: 40px;
   }
 
   .discovery-container {
-    margin: 40px;
+    padding: 40px;
+  }
+
+  .contact-container .left-side {
+    display: none;
+  }
+
+  .contact-container form {
+    width: 80%;
+  }
+
+  .discovery-container .block {
+    margin-bottom: 60px;
   }
 }
 
@@ -282,6 +419,14 @@ button.btn {
   }
 
   .discovery-container .discovery-content {
-    flex: 0 calc(50% - 20px);
+    flex: 0 calc(50% - 30px);
+  }
+
+  .card-container  {
+    padding: 40px;
+  }
+
+  .discovery-container {
+    padding: 40px;
   }
 }
