@@ -9,7 +9,7 @@ html, body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
-}
+} 
 
 /*Global*/
 
@@ -32,7 +32,11 @@ h1 {
 }
 
 h3 {
-font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.6;
 }
 
 button.btn {
@@ -122,6 +126,7 @@ button.btn {
 
 /*Main*/
 .cover-container {
+  margin-bottom: 100px;
     height: 400px;
     background: url(images/agustin-diaz-gargiulo.jpg);
     background-size: cover;
@@ -158,52 +163,47 @@ button.btn {
 
 .card-container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cards {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.cards-content {
+  padding: 40px;
+  flex: 1 100%;
+  border: .5px solid #cecece;
+  margin: 15px;
+}
+
+.cards-content h3 {
+  margin: 25px 0 20px 0;
+}
+
+.cards-image {
   width: 100%;
 }
 
-.cards .col {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.cards-image img {
+  width: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.col .card {
-  width: 25%;
-}
+@media (min-width: 768px) {
+  .card-container {
+    margin: 40px;
+  }
 
-.cards .card {
-  height: 300px;
-  margin: 6px;
-}
-
-.card-container #red {
-  background-color: red;
-}
-
-.card-container #blue {
-  background-color: blue;
-}
-
-.card-container #green {
-  background-color: green;
-}
-
-.card-container #purple {
-  background-color: purple;
-}
-
-.card-container #yellow {
-  background-color: yellow;
-}
-
-.card-container #orange {
-  background-color: orange;
+  .cards-content {
+    flex: 1 calc(50% - 30px);
+  }
 }
 
 /*Viewport less then or equal to 750px*/
@@ -215,5 +215,16 @@ button.btn {
 
   .nav .toggle-collapse {
     display: initial;
+  }
+
+  .card-container  {
+    margin: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .cards-content {
+    flex: 1 calc(32% - 30px);
   }
 }
