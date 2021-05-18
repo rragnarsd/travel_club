@@ -10,6 +10,7 @@ html {
 
 
 html, body {
+  font-family: 'Nunito Sans', sans-serif;
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -32,10 +33,11 @@ h1 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 p {
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -157,7 +159,7 @@ p {
   padding: 1rem 3rem;
   background: #67989E;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   font-weight: bold;
   transition: all .2s linear;
@@ -206,6 +208,7 @@ p {
   border: .5px solid #cecece;
   margin: 15px;
   border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .card-container .cards-content h3 {
@@ -245,6 +248,7 @@ p {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .discovery-container .discovery-content .discovery-text {
@@ -275,7 +279,7 @@ p {
   background-color: #67989E;
   color: #fff;
   padding: 10px 28px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
@@ -307,6 +311,7 @@ p {
 
 .contact-container .left-side {
   width: 40%;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -324,6 +329,7 @@ p {
   background: rgba(0, 0, 0, .5);
   padding: 80px 30px;
   border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 form {
@@ -345,7 +351,8 @@ form {
   border: 1.5px solid #67989E;
   border-radius: 10px;
   padding: 12px 18px;
-  margin: 15px 0;
+  margin: 10px 0;
+
   outline: none;
   resize: vertical;
 }
