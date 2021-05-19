@@ -47,7 +47,8 @@ p {
 .nav {
   background: #fff;
   padding: 0 2rem;
-  height: 0rem;
+  /* height: 0rem; */
+  height: 4rem;
   min-height: 5vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
@@ -75,12 +76,11 @@ p {
 .nav .toggle-collapse .toggle-icons {
   display: flex;
   justify-content: flex-end;
-  padding: 1.7rem 0;
+  padding: 1.4rem 0;
 }
 
 .nav .toggle-collapse .toggle-icons i {
-  font-size: 1.4rem;
-  /* font-size: 1.5rem; */
+  font-size: 1.5rem;
   color: #333;
 }
 
@@ -395,31 +395,43 @@ textarea::placeholder {
   color: #215258;
 }
 
+
 /*Media Queries*/
-
-@media (max-width: 1024px) {
-  .nav .nav-menu, .nav .nav-items {
-    flex-direction: column;
+@media (min-width: 300px) {
+  .site-cover {
+    padding: 5rem 2rem;
   }
 
-  .nav .toggle-collapse {
-    display: initial;
-  }
-
-  .nav .nav-items .nav-link {
-    padding: 1.6rem 0;
+  .site-cover h1 {
+    font-size: 30px;
   }
 
   .site-cover .btn {
-    display: none;
+    margin-top: 10px;
   }
+
+  form {
+    width: 100%;
+  }
+
+  .card-container,
+  .discovery-container {
+    padding: 0 40px;
+  }
+
+  .discovery-container .discovery-content {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
 
   .card-container .cards-content {
     flex: 1 calc(50% - 30px);
   }
 
-  .card-container .cards-content {
-    flex: 1 calc(50% - 20px);
+  .discovery-container .discovery-content {
+    flex: 0 calc(50% - 20px);
   }
 
   .card-container,
@@ -427,12 +439,8 @@ textarea::placeholder {
     padding: 40px;
   }
 
-  .contact-container .left-side {
-    display: none;
-  }
-
   .contact-container form {
-    width: 80%;
+    width: 40%;
   }
 
   .discovery-container .block {
@@ -440,6 +448,11 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 768px) {
+  .contact-container .left-side {
+    display: none;
+  }
+}
 
 @media (min-width: 1024px) {
 
@@ -456,3 +469,19 @@ textarea::placeholder {
     padding: 40px;
   }
 }
+
+@media (max-width: 1024px) {
+  .nav .nav-menu, .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  .nav .nav-items .nav-link {
+    padding: 1.6rem 0;
+  }
+}
+
+
