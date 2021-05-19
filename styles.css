@@ -75,11 +75,12 @@ p {
 .nav .toggle-collapse .toggle-icons {
   display: flex;
   justify-content: flex-end;
-  padding: 1.5rem 0;
+  padding: 1.7rem 0;
 }
 
 .nav .toggle-collapse .toggle-icons i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  /* font-size: 1.5rem; */
   color: #333;
 }
 
@@ -406,7 +407,7 @@ textarea::placeholder {
   }
 
   .nav .nav-items .nav-link {
-    padding: 1.6rem .5rem;
+    padding: 1.6rem 0;
   }
 
   .site-cover .btn {
