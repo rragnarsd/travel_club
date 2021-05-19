@@ -76,7 +76,7 @@ p {
 .nav .toggle-collapse .toggle-icons {
   display: flex;
   justify-content: flex-end;
-  padding: 1.4rem 1rem;
+  padding: 1.4rem 0;
 }
 
 .nav .toggle-collapse .toggle-icons i {
@@ -398,6 +398,10 @@ textarea::placeholder {
 
 /*Media Queries*/
 @media (min-width: 300px) {
+  .nav .toggle-collapse .toggle-icons {
+    padding: 1.4rem 1rem;
+  }
+
   .site-cover {
     padding: 5rem 2rem;
   }
