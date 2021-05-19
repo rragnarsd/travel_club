@@ -76,7 +76,7 @@ p {
 .nav .toggle-collapse .toggle-icons {
   display: flex;
   justify-content: flex-end;
-  padding: 1.4rem 0;
+  padding: 1.4rem 1rem;
 }
 
 .nav .toggle-collapse .toggle-icons i {
