@@ -2,10 +2,16 @@
 
 This website was built with HTML, CSS and a little bit of jquery.
 
+I'm still trying to figure out how to use media queries correctly, so if you see something that's not right please let me know! <br>
+I'm open to all feedback :smirk:
+
+I also experimented with CSS variables - also open to feedback :smiley:
+
 <strong>In this project I used:</strong><br>
 <li>Font Awesome</li>
 <li>Google Fonts - Nunito Sans</li>
-<li>Css-clip-path-generator</li><br>
+<li>Css-clip-path-generator</li>
+<li>Unsplash</li><br>
 
 <strong>Custom made color pallette that I made for this project:</strong>
 
