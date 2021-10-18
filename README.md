@@ -17,5 +17,8 @@ I also experimented with CSS variables - also open to feedback :smiley:
 
 ![club](https://user-images.githubusercontent.com/44742460/118853735-9dc50380-b8c3-11eb-891e-b3f82d9bc50b.png)
 
+# Screenshot
+![travelclub](https://user-images.githubusercontent.com/44742460/137785788-387480d1-28cd-44e6-a5c6-9b259f304e78.png)
+
 
 <strong>Here is a live version of the site! https://rragnarsd.github.io/travel_club/</strong>
